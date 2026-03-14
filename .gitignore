@@ -1,0 +1,10 @@
+.env
+venv/
+__pycache__/
+*.pyc
+results/
+.ipynb_checkpoints/
+*.ipynb
+untitled.txt
+sujet_images.pdf
+api.py

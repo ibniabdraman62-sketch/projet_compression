@@ -1,0 +1,12 @@
+pillow
+opencv-python
+scikit-image
+numpy
+scipy
+matplotlib
+seaborn
+python-dotenv
+tqdm
+imageio
+streamlit
+google-genai
