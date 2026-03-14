@@ -3,8 +3,9 @@
 
 **Université Hassan II de Casablanca**  
 **Faculté des Sciences & Techniques Mohammedia**  
-**Module : Transmission de données multimédias — Licence IRM**
-**Encadrant : Prof. Abdellah ADIB**    
+**Module : Traitement d'Images**  
+**Licence IRM**  
+**Encadrant : Prof. Abdellah ADIB**  
 **Année Universitaire : 2025-2026**
 
 ---
