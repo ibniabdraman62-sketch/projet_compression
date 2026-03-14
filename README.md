@@ -3,7 +3,8 @@
 
 **Université Hassan II de Casablanca**  
 **Faculté des Sciences & Techniques Mohammedia**  
-**Module : Traitement d'Images — Licence IRM**  
+**Module : Transmission de données multimédias — Licence IRM**
+**Encadrant : Prof. Abdellah ADIB**    
 **Année Universitaire : 2025-2026**
 
 ---
@@ -54,7 +55,7 @@ Le système est composé de 6 agents autonomes :
 
 ### 1. Cloner le dépôt
 ```bash
-git clone https://github.com/ton_username/projet_compression.git
+git clone https://github.com/ibniabdraman62-sketch/projet_compression.git
 cd projet_compression
 ```
 
@@ -73,7 +74,7 @@ pip install -r requirements.txt
 
 Crée un fichier `.env` à la racine :
 ```
-GEMINI_API_KEY=ta_clé_ici
+GEMINI_API_KEY=votre_clé_gemini_ici
 ```
 
 ---
@@ -164,10 +165,10 @@ Les rapports JSON sont générés dans le dossier `results/` pour chaque image t
 
 ## Auteurs
 
-- **ABDRAMAN IBNI** — ABDRAMAN
-- **ENNOURI**— ZAKARIA
-- **AMINE**— ILHAM
-- **RHALBI**— SOUKAINA
+- **ABDRAMAN IBNI**  ABDRAMAN
+- **ENNOURI** ZAKARIA
+- **AMINE** ILHAM
+- **RHALBI** SOUKAINA
 
 ---
 
