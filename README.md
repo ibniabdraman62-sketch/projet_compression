@@ -166,7 +166,7 @@ Les rapports JSON sont générés dans le dossier `results/` pour chaque image t
 
 ## Auteurs
 
-- **ABDRAMAN IBNI**  ABDRAMAN
+- **ABDRAMAN IBNI**  ABDRAMAN (Chef du projet)
 - **ENNOURI** ZAKARIA
 - **AMINE** ILHAM
 - **RHALBI** SOUKAINA
