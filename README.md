@@ -132,7 +132,7 @@ projet_compression/
 ## Dataset
 
 35 images réparties en 4 catégories :
-- **Photos** : 9 images
+- **Photos** : 12 images
 - **Documents** : 7 images
 - **Graphiques** : 8 images
 - **Screenshots** : 8 images
