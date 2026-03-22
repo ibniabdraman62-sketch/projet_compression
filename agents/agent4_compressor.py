@@ -67,6 +67,20 @@ def compress_image(image_path: str, recommendation: dict, output_dir: str = "res
             if fmt == "JPEG":
                 quality = reco.get("qualite", 85)
                 img_rgb.save(str(output_file), "JPEG", quality=quality, optimize=True)
+                # Ajouter aussi JPEG qualite 60 pour comparaison
+                output_file_60 = output_path / f"{path.stem}_compressed_q60.jpeg"
+                img_rgb.save(str(output_file_60), "JPEG", quality=60, optimize=True)
+                compressed_size_60 = output_file_60.stat().st_size
+                original_size_60 = path.stat().st_size
+                ratio_60 = round((1 - compressed_size_60 / original_size_60) * 100, 2)
+                compressed_files.append({
+                    "format": "JPEG_Q60",
+                    "path": str(output_file_60),
+                    "size_bytes": compressed_size_60,
+                    "size_kb": round(compressed_size_60 / 1024, 2),
+                    "compression_ratio": ratio_60,
+                    "success": True
+                })
 
             elif fmt == "PNG":
                 compress_level = 9 if reco.get("niveau_compression") == "fort" else 6

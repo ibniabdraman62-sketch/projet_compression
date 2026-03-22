@@ -52,16 +52,18 @@ def calculate_metrics(original_path: str, compressed_files: list) -> dict:
             )
 
             compression_ratio = round((1 - compressed_size / original_size) * 100, 2)
-            quality_score = round(ssim_value * (1 + compression_ratio / 100), 4)
+            psnr_norm = min(psnr_value if psnr_value != float("inf") else 50, 50) / 50
+            taux_norm = max(compression_ratio, 0) / 100
+            quality_score = round(0.40 * ssim_value + 0.35 * psnr_norm + 0.25 * taux_norm, 4)
 
-            if psnr_value == float("inf") or psnr_value > 40:
-                quality_label = "Excellente"
-            elif psnr_value > 30:
-                quality_label = "Bonne"
-            elif psnr_value > 20:
+            if quality_score >= 0.80:
+                quality_label = "Excellent"
+            elif quality_score >= 0.65:
+                quality_label = "Bon"
+            elif quality_score >= 0.50:
                 quality_label = "Acceptable"
             else:
-                quality_label = "Mauvaise"
+                quality_label = "Insuffisant"
 
             if compression_ratio > 70:
                 compression_label = "Fort"
