@@ -3,7 +3,7 @@
 
 **Université Hassan II de Casablanca**  
 **Faculté des Sciences & Techniques Mohammedia**  
-**Module : Traitement d'Images**  
+**Module : Transmission de donnees multimedias**  
 **Licence IRM**  
 **Encadrant : Prof. Abdellah ADIB**  
 **Année Universitaire : 2025-2026**
@@ -34,7 +34,8 @@ Le système est composé de 6 agents autonomes :
 
 ## Formats supportés
 
-- JPEG
+- JPEG (qualite recommandee par Gemini)
+- JPEG Q60 (compression maximale)
 - PNG
 - WebP
 - TIFF
@@ -48,7 +49,8 @@ Le système est composé de 6 agents autonomes :
 - **PSNR** (Peak Signal-to-Noise Ratio)
 - **SSIM** (Structural Similarity Index)
 - **Taux de compression** (%)
-- **Score qualité/taille combiné**
+- **Score combine** : 0.40 x SSIM + 0.35 x PSNR + 0.25 x taux
+- **Interpretation** : Excellent / Bon / Acceptable / Insuffisant
 
 ---
 
